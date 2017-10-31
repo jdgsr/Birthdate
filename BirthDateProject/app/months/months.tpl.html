@@ -1,0 +1,18 @@
+<!-- homeCtrl is set as a HomeController in the home.route.js -->
+
+    <div class="jumbotron">
+    	 <label for="singleSelect">  Sort By: </label><br>
+		    <select name="singleSelect" ng-model="vm.selected" ng-change="vm.sortBy(vm.selected)">
+		    	 <option value="">---Please select---</option> <!-- not selected / blank option -->
+		      <option value="chronological">Chronological</option>
+		      <option value="numerical">Numerical</option>
+		    </select><br>
+        <div style="text-align:center">
+            <h3>Birthday Graph</h3>
+        <div ng-repeat="detail in vm.birthCount">
+            <div id="rectangle"><h4>{{detail.month}}  -  {{detail.count}}</h4>
+      		</div>
+      	</div>
+        
+        </div>
+    </div>

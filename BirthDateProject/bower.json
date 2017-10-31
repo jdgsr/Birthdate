@@ -1,0 +1,14 @@
+{
+  "name": "birthdayApp",
+  "description": "Birthday App",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "~1.4.0",
+    "angular-bootstrap": "~0.13",
+    "angular-mocks": "~1.4.0",
+    "angular-ui-router": "~0.2",
+    "bootstrap": "~3.1",
+    "fontawesome": "~4.2.0",
+    "moment": "^2.19.1"
+  }
+}

@@ -1,0 +1,25 @@
+<!-- inputCtrl is set as a inputController in the input.route.js -->
+
+<div class="demo-md-panel-animation md-padding">
+  <h2>Birthday Input</h2>
+   <md-content class="md-no-momentum">
+   <form name="birthdayForm">
+     <md-input-container class="md-icon-float md-block">
+      <!-- Use floating label instead of placeholder -->
+      <label>Name : </label>
+      <input ng-model="vm.name" type="text" placeholder="Name" ng-required="true">
+    </md-input-container>
+
+   <md-input-container class="md-icon-float md-block">
+      <!-- Use floating label instead of placeholder -->
+      <label>Birthday Date : </label>
+      <input ng-model="vm.birthDate" type="text" placeholder="Date in (dd-mm-yyyy) format" ng-required="true">
+    </md-input-container>
+
+    <md-button type="submit" class="md-raised md-primary" onclick="vm.storeData()">Submit</md-button>
+    <div ng-show="(vm.isError)">
+    	The date format you entered is not correct.
+    </div>
+</form>
+  </md-content>
+</div>
